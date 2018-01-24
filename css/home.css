@@ -1,0 +1,75 @@
+/* CSS document */
+
+#top {z-index: 0;}
+#crossimg {width: 100%; position: fixed;}
+.welcome {font-size: 20vw; color: white; font-family: Arial, Helvetica, sans-serif; 
+    position: absolute; top: 20%; margin: 0 5%;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #ccc;}
+.parallax {
+    /* The image used */
+    background-image: url("../img/cross_dark.jpg");
+    background-size: 100%;
+
+    /* Set a specific height */
+    min-height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blurb {background-color: purple; background: rgba(128, 0, 128, 0.8); width: 20%;
+    position: absolute; top: 60%; right: 7%; padding: 10px 20px; color: white; font-size: 18px;}
+
+#main {}
+
+#services {background-color: white;}
+
+.mid {width: 50%; float: left;}
+.mid h2 {text-decoration: underline;}
+.mid p {padding-left: 20px;}
+
+.serv_text {margin-left: 100px;}
+
+#events {background-color: #f2f2f2;}
+#events-upcoming li {padding: 15px; list-style-type: circle;}
+
+@media (max-width: 1200px) {
+    #blurb {top: 55%; right: 5%; width: 50%;}
+}
+@media (max-width: 1000px) {
+    #blurb {top: 50%;}
+}
+@media (max-width: 768px) {
+    .parallax {min-height: 400px; background-size: auto; background-position: top;}
+    .welcome {top: 12%; font-size: 12vw; -webkit-text-stroke-width: 0;}
+    #blurb {top: 35%; width: 60%; font-size: 14px; padding: 5px 20px;}
+    .serv_text {margin-left: 50px; font-size: 18px;}
+    #events-upcoming li {padding: 10px;}
+}
+@media (max-width: 600px) {
+    #blurb {top: 25%;}
+    .mid {width: 100%; padding: 20px 0;}
+}
+@media (max-width: 360px) {
+    .welcome {top: 15%;}
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1400px) { 
+    .welcome {top: 10%;}
+    #blurb {top: 50%;}
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1400px) {
+    #blurb {top: 50%;}
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1200px) {
+    #blurb {top: 45%;}
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px) {
+    #blurb {top: 25%;}
+}

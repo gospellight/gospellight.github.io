@@ -1,0 +1,24 @@
+/* CSS Document */
+
+#main {padding: 0;}
+#main div {clear: both; margin-top: 50px;}
+#main h3 {background-color: purple; color: white; padding: 20px;}
+/*#main p {display: none;}*/
+
+.left {width: 40%; float: left; left: 0;
+/*overflow:hidden;
+  transition:all 1s ease;*/
+-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+.right {width: 40%; float: right; right: 0;}
+#main .left h3, .left p {padding-left: 50px;}
+.right p {padding-right: 50px;}
+
+#main p {display: none;}
+
+/*.left.expand {width: 70%;}*/
+
+/*.left:hover {
+    width: 70%;
+}*/

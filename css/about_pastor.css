@@ -1,0 +1,69 @@
+/* CSS Document */
+
+.about {font-size: 10vw; color: white; font-family: Arial, Helvetica, sans-serif; 
+    position: absolute; top: 5%; margin-left: 5%;}
+.parallax {
+    /* The image used */
+    background-image: url("../img/praisedance.jpg");
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: 100%;
+
+    /* Set a specific height */
+    min-height: 350px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+}
+
+.parallaxP {
+    /* The image used */
+    background-image: url("../img/blessed.jpg");
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: 100%;
+
+    /* Set a specific height */
+    min-height: 350px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {padding: 20px 5%;}
+
+#overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 350px; /* Full height (cover the whole page) */
+    top: 0; 
+    /*left: 0;
+    right: 0;
+    bottom: 0;*/
+    background-color: rgba(128,0,128,0.8); /* Black background with opacity */
+    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.churchimg, .pastorimg {-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%); 
+    float: right; position: relative; margin-top: -130px; margin-left:10px;
+}
+
+@media (max-width: 768px) {
+    .about {top: 10%; font-size: 15vw;}
+    .parallax {background-size: cover; background-position: left;}
+    .parallaxP {background-position: right;}
+}
+@media (max-width: 450px) {
+    .churchimg {width: 100%; margin-left: 0; margin-bottom: 10px;}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1600px) { 
+    .about {top: 1%;}
+}

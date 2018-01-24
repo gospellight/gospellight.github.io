@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Brianna J. Lofton">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="gl.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Scope One' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="gl"><a href="/">Gospel Light</a></li>
+			<div class="hamburger" onclick="myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+			<li class="end"><a href="contact.html">Contact Us</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="aux.html">Auxiliaries</a></li>
+			<li><a href="pastor.html">Pastor</a></li>
+			<li><a href="about.html">About</a></li>
+			<li id="display"></li>
+		</ul>
+	</nav>
+	<div id="top">
+		<!-- <img src="img/cross_dark.jpg" alt="background image" id="crossimg"> -->
+		<h1 class="welcome">Welcome</h1>
+
+		<div class="parallax"></div>
+
+		<div id="blurb">
+			<p>God raises people to handle issues facing the church, society, and His people. This mandate has been placed upon us to accept the challenge of reaping this present day harvest. We must reap and not faint! We are committed to reap this harvest!</p>
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="events" class="mid">
+			<div class="serv_text">
+				<h2>Upcoming Events</h2>
+				<ul class="events" id="events-upcoming">
+					
+				</ul>
+			</div>
+		</div>
+
+		<div id="services" class="mid">
+			<div class="serv_text">
+				<h2>Services</h2>
+				<h3>SUNDAY</h3>
+					<p>Intercessory Prayer 9:30am</p>
+					<p>Bible Church School 9:45am</p>
+					<p>Morning Worship 11:15am</p>
+				<h3>WEDNESDAY</h3>
+					<p>Prayer 7:00pm</p>
+					<p>Bible Study 7:30pm</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p class="name">Gospel Light United Holy Church</p>
+		<ul>
+			<li><a href="about.html">About</a></li>
+			<li><a href="pastor.html">Pastor</a></li>
+			<li><a href="aux.html">Auxiliaries</a></li>
+			<li><a href="events.html">Events</a></li>
+		</ul>
+		<p>442 E. Hillsboro St. | Mount Olive, NC 28365 | (919) 658-4183</p>
+		<a href="contact.html"><button>Contact Us</button></a>
+	</footer>
+<!-- FormatGoogleCalendar Javascript file -->
+<script src="/js/format-google-calendar.js"></script>
+
+<script>
+formatGoogleCalendar.init({
+calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/uhcgospellight@gmail.com/events?key=AIzaSyBiwky5XpSew7Q2f-61WP-_p2Njchnp_BY&maxResults=2500',
+        past: false,
+        upcoming: true,
+        sameDayTimes: false,
+        dayNames: false,
+        pastTopN: 0,
+        upcomingTopN: 6,
+        itemsTagName: 'li',
+		upcomingHeading: '',
+        upcomingSelector: '#events-upcoming',
+        format: ['*summary*']
+});
+</script>
+</body>
+</html>
