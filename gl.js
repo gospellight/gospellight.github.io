@@ -24,11 +24,11 @@ $(document).ready(function(){
 
 });
 
-$(window).resize(function() {
-	location.reload();
-        $("#display").html(
-        $(window).width());
-});
+// $(window).resize(function() {
+// 	location.reload();
+//         $("#display").html(
+//         $(window).width());
+// });
 
 // function showP() {
 // 	var offsetTop = $(this).offset().top-200;
