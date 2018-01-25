@@ -1,5 +1,22 @@
 /* CSS Document */
 
+.parallaxAux {
+    /* The image used */
+    background-image: url("../img/Deacon1 9.23.30 PM.jpg.jpg");
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: 100%;
+
+    /* Set a specific height */
+    min-height: 350px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #main {padding: 0;}
 #main div {clear: both; margin-top: 50px;}
 #main h3 {background-color: purple; color: white; padding: 20px;}
