@@ -17,25 +17,7 @@
     background-size: cover;
 }
 
-/* #main {padding: 0;}
-#main div {clear: both; margin-top: 50px;}
-#main h3 {background-color: purple; color: white; padding: 20px;} */
-/*#main p {display: none;}*/
-
-/* .left {width: 40%; float: left; left: 0; */
-/*overflow:hidden;
-  transition:all 1s ease;*/
-/* -webkit-transition: width 2s;
-    transition: width 2s;
-} */
-/* .right {width: 40%; float: right; right: 0;}
-#main .left h3, .left p {padding-left: 50px;}
-.right p {padding-right: 50px;}
-
-#main p {display: none;}
- */
-/*.left.expand {width: 70%;}*/
-
-/*.left:hover {
-    width: 70%;
-}*/
+#main h2 {margin: 30px 0 5px;}
+.passage {margin-top: 5px; margin-bottom: 0;}
+.verse {text-align: right; font-style: italic; margin-top: 0;}
+#main span {vertical-align: super; font-size: smaller; font-weight: bold;}
