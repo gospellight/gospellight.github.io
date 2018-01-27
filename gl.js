@@ -53,6 +53,6 @@ var offsetTop = $('div').offset().top-200;
 	});
 }
 
-$(window).on('scroll', function(){  
-  $('#blurb').css('top', ($('.welcome').height() - $('body').scrollTop() * 2));
-});
+$(window).on('scroll', function(){
+    $('#blurb').animate({'top': '75px'}, 2000);
+ });
