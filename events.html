@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Brianna J. Lofton">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gospel Light United Holy Church</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/aux_events.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="gl.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Scope One' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="gl"><a href="/">Gospel Light</a></li>
+			<div class="hamburger" onclick="myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+<!-- 			<li class="end"><a href="contact.html">Contact Us</a></li> -->
+			<li><a href="events.html">Events</a></li> 
+			<li><a href="aux.html">Auxiliaries</a></li>
+			<li><a href="pastor.html">Pastor</a></li>
+			<li><a href="about.html">About</a></li>
+<!-- 			<li id="display"></li> -->
+		</ul>
+	</nav>
+
+
+		<div class="parallaxAux"></div>
+		<div id="overlay"></div>
+		<h1 class="about">Events</h1>
+	<div id="main">
+		<p>We hold service every Sunday, excluding the 5th Sunday. We begin with Intercessory Prayer at 9:30am followed by Bible Church School at 9:45am and Morning Worship at 11:15am.</p>
+		<p>Bible Study is held every Wednesday at 7:30pm. It is preceded by Intercessory Prayer which begins at 7:00pm.</p>
+		<ul class="events" id="events-upcoming">
+					
+				</ul>
+	</div><!-- end main -->
+
+	<footer>
+		<p class="name">Gospel Light United Holy Church</p>
+		<ul>
+			<li><a href="about.html">About</a></li>
+			<li><a href="pastor.html">Pastor</a></li>
+			<li><a href="aux.html">Auxiliaries</a></li>
+			<li><a href="events.html">Events</a></li>
+		</ul>
+		<p>442 E. Hillsboro St. | Mount Olive, NC 28365 | (919) 658-4183</p>
+		<a href="contact.html"><button>Contact Us</button></a>
+	</footer>
+<!-- FormatGoogleCalendar Javascript file -->
+<script src="format-google-calendar-min.js"></script>
+
+<script>
+formatGoogleCalendar.init({
+calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/uhcgospellight@gmail.com/events?key=AIzaSyCoLq0iSai6fxbbbsc7AYNHXLr1g1dlGzY&maxResults=2500',
+        past: false,
+        upcoming: true,
+        sameDayTimes: true,
+        recurringEvents: false,
+        dayNames: true,
+        pastTopN: 0,
+        upcomingTopN: 20,
+        itemsTagName: 'li',
+		upcomingHeading: '<h2>Upcoming Events at Gospel Light</h2>',
+        upcomingSelector: '#events-upcoming',
+        format: ['<strong>', '*summary*', '</strong> - ', '*date*', '<span style="font-size:18px;"><br /> Location: ', '*location*', '<br />', '*description*', '</span>']
+});
+</script>
+</body>
+</html>

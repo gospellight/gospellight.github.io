@@ -1,0 +1,67 @@
+/* CSS Document */
+.about {font-size: 10vw; color: white; font-family: Arial, Helvetica, sans-serif; 
+    position: absolute; top: 5%; margin-left: 5%;}
+
+#main {padding: 20px 5%;}
+
+#overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 350px; /* Full height (cover the whole page) */
+    top: 0; 
+    /*left: 0;
+    right: 0;
+    bottom: 0;*/
+    background-color: rgba(128,0,128,0.8); /* Black background with opacity */
+    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.parallaxAux {
+    /* The image used */
+    background-image: url("../img/Deacons.jpg");
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: 100%;
+
+    /* Set a specific height */
+    min-height: 350px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxEv {
+    /* The image used */
+    background-image: url("../img/Deacons.jpg");
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: 100%;
+
+    /* Set a specific height */
+    min-height: 350px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main h2 {margin: 30px 0 5px;}
+.passage {margin-top: 5px; margin-bottom: 0;}
+.verse {text-align: right; font-style: italic; margin-top: 0;}
+#main sup {font-weight: bold;}
+
+
+@media (max-width: 768px) {
+    .about {top: 15%; font-size: 15vw;}
+    .parallax {background-size: cover;}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1600px) { 
+    .about {top: 1%;}
+}
+
