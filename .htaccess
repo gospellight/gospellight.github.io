@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^gospellightmountolive.com
+RewriteRule ^(.*) https://gospellight.github.io/ [P]
