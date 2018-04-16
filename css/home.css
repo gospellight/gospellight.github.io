@@ -27,7 +27,7 @@
 
 #main {}
 
-#services {background-color: white;}
+#services {background-color: white; padding-bottom: 30px;}
 
 .mid {width: 50%; float: left;}
 .mid h2 {text-decoration: underline;}
@@ -43,6 +43,7 @@
 }
 @media (max-width: 1000px) {
     #blurb {top: 50%;}
+    .serv_text:first-child {margin-left: 50px;}
 }
 @media (max-width: 768px) {
     .parallax {min-height: 400px; background-size: auto; background-position: top;}
